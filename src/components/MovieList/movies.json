@@ -65,21 +65,6 @@
     "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg"
   },
   {
-    "title": "Forbidden Planet",
-    "overview": "Starship C57D travels to planet Altair 4 in search of the crew of spaceship \"Bellerophon\", a scientific expedition that has been missing for 20 years, only to find themselves unwelcome by the expedition's lone survivor and warned of destruction by an invisible force if they don't turn back immediately.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/aq0OQfRS7hDDI8vyD0ICbH9eguC.jpg"
-  },
-  {
-    "title": "Evil Dead 2",
-    "overview": "A documentary about the making of Evil Dead 2.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/3jLh2waQOnsjHUN2BNuZSbUliln.jpg"
-  },
-  {
-    "title": "But I\u2019m A Cheerleader",
-    "overview": "Megan is an all-American girl. A cheerleader. She has a boyfriend. But Megan doesn't like kissing her boyfriend very much. And she's pretty touchy with her cheerleader friends. Her conservative parents worry that she must be a lesbian and send her off to \"sexual redirection\" school, where she must, with other lesbians and gays learn how to be straight.",
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bOrbfvN8rtEb0DLGeNJd8t42qQk.jpg"
-  },
-  {
     "title": "Arrival",
     "overview": "Taking place after alien crafts land around the world, an expert linguist is recruited by the military to determine whether they come in peace or are a threat.",
     "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/x2FJsf1ElAgr63Y3PNPtJrcmpoe.jpg"
@@ -116,6 +101,7 @@
   },
   {
     "title": "Porco Rosso",
+    "watched": true,
     "overview": "In Italy in the 1930s, sky pirates in biplanes terrorize wealthy cruise ships as they sail the Adriatic Sea. The only pilot brave enough to stop the scourge is the mysterious Porco Rosso, a former World War I flying ace who was somehow turned into a pig during the war. As he prepares to battle the pirate crew's American ace, Porco Rosso enlists the help of spunky girl mechanic Fio Piccolo and his longtime friend Madame Gina.",
     "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/byKAndF6KQSDpGxp1mTr23jPbYp.jpg"
   },
@@ -126,6 +112,7 @@
   },
   {
     "title": "Spirited Away",
+    "watched": true,
     "overview": "The people that brought the film Sen to Chihiro no kamikakushi (2001) (a.k.a. \"Spirited Away\") to the US explain how it was converted into English, with some minor confusion between languages, and how well it did in both Japan and America.",
     "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/x1iaVnI4mTaETwAKTLyIAKFwQSJ.jpg"
   },
@@ -191,6 +178,7 @@
   },
   {
     "title": "Star Wars Episode I: The Phantom Menace",
+    "watched": true,
     "overview": "Anakin Skywalker, a young slave strong with the Force, is discovered on Tatooine. Meanwhile, the evil Sith have returned, enacting their plot for revenge against the Jedi.",
     "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/6wkfovpn7Eq8dYNKaG5PY3q2oq6.jpg"
   },

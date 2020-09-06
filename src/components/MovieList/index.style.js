@@ -5,7 +5,7 @@ export const MovieWrapper = styled.div`
   width: 50%;
   padding: 10px;
 `;
-export const Button = styled.button`
+export const ButtonWrapper = styled.button`
   background-color: ${(props) => (props.selected ? "$ffffff" : "#fdd0f1")};
   border-radius: 8px;
   border: 1px;
@@ -17,8 +17,4 @@ export const Button = styled.button`
   &.visited {
     border: 0;
   }
-`;
-
-export const GridWrapper = styled.div`
-  width: 200px;
 `;
