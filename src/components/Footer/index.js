@@ -21,7 +21,9 @@ export const Footer = () => {
           community.
         </Grid>
         <Grid item xs={12}>
-          <a href="https://github.com/codejulen/dish">Changelog</a>
+          <a href="https://github.com/codejulen/dish/blob/master/CHANGELOG.md">
+            Changelog
+          </a>
         </Grid>
       </Grid>
     </FooterStyle>
