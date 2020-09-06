@@ -75,7 +75,7 @@ const MovieList = () => {
           <h2>
             <span>Up Next</span>
           </h2>
-          <Grid container spacing={10}>
+          <Grid container spacing={1}>
             <Grid item xs={4}>
               <img src={focusedMovie[0].poster} height={300} alt="hello" />
             </Grid>

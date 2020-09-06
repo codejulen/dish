@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MovieWrapper = styled.div`
   margin: auto;
-  width: 50%;
+  width: 80%;
   padding: 10px;
 
   h2 span {
