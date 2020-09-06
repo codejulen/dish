@@ -8,9 +8,10 @@ const FooterStyle = styled.div`
 `;
 export const Footer = () => {
   return (
-    <Grid container alignItems="center">
-      <Grid item xs={12}>
-        <FooterStyle>
+    <FooterStyle>
+      {" "}
+      <Grid container alignItems="center">
+        <Grid item xs={12}>
           Made with{" "}
           <span role="img" aria-label="heart">
             ❤️
@@ -18,9 +19,12 @@ export const Footer = () => {
           using React. By <a href="https://codejulen.github.io">Julian</a> for{" "}
           <a href="https://twitch.tv/imdishrag">Dish</a> and her wonderful
           community.
-        </FooterStyle>
+        </Grid>
+        <Grid item xs={12}>
+          <a href="https://github.com/codejulen/dish">Changelog</a>
+        </Grid>
       </Grid>
-    </Grid>
+    </FooterStyle>
   );
 };
 

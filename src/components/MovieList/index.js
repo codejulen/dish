@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { MovieWrapper, ButtonWrapper } from "./index.style";
-import movies from "./movies";
 import Grid from "@material-ui/core/Grid";
+import movies from "./movies";
+import MovieCard from "./MovieCard";
+import FocusedMovie from "./FocusedMovie";
 
 const MovieList = () => {
   // Hooks
@@ -71,21 +73,12 @@ const MovieList = () => {
         </Grid>
       </Grid>
       {focusedMovie && (
-        <div>
-          <h2>
-            <span>Up Next</span>
-          </h2>
-          <Grid container spacing={1}>
-            <Grid item xs={4}>
-              <img src={focusedMovie[0].poster} height={300} alt="hello" />
-            </Grid>
-            <Grid item xs={8}>
-              <h1>{focusedMovie[0].title}</h1>
-              <h3>Submitted By: {focusedMovie[0].submitter}</h3>
-              <p>{focusedMovie[0].overview}</p>
-            </Grid>
-          </Grid>
-        </div>
+        <FocusedMovie
+          title={focusedMovie[0].title}
+          contributor={focusedMovie[0].submitter}
+          overview={focusedMovie[0].overview}
+          poster={focusedMovie[0].poster}
+        />
       )}
       <div>
         <h2>
@@ -113,16 +106,25 @@ const MovieList = () => {
           )}
         </h4>
       )}
-      <br />
-      <br />
       {movieList.length === 0 && (
         <p>No movies found with the chosen filters.</p>
       )}
-      <Grid container spacing={10}>
+      <br />
+      <br />
+      <Grid
+        container
+        justify="center"
+        direction="row"
+        alignItems="flex-start"
+        spacing={2}
+      >
         {movieList.map((m) => (
-          <Grid container item xs={4}>
-            <img src={m.poster} height={300} alt={m.title} />
-          </Grid>
+          <MovieCard
+            title={m.title}
+            poster={m.poster}
+            overview={m.overview}
+            contributor={m.submitter}
+          />
         ))}
       </Grid>
     </MovieWrapper>
