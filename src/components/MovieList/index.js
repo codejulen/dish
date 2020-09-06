@@ -29,9 +29,7 @@ const MovieList = () => {
           movies.filter((m) => (seenFilter ? m.watched : !m.watched))
         );
       } else if (submitterFilter != null) {
-        setMovieList(
-          movies.filter((m) => (seenFilter ? m.watched : !m.watched))
-        );
+        setMovieList(movies.filter((m) => m.submitter === submitterFilter));
       }
     }
   }, [submitterFilter, seenFilter]);
@@ -77,7 +75,7 @@ const MovieList = () => {
           <h2>
             <span>Up Next</span>
           </h2>
-          <Grid container spacing={12}>
+          <Grid container spacing={10}>
             <Grid item xs={4}>
               <img src={focusedMovie[0].poster} height={300} alt="hello" />
             </Grid>
@@ -120,7 +118,7 @@ const MovieList = () => {
       {movieList.length === 0 && (
         <p>No movies found with the chosen filters.</p>
       )}
-      <Grid container spacing={3}>
+      <Grid container spacing={10}>
         {movieList.map((m) => (
           <Grid container item xs={4}>
             <img src={m.poster} height={300} alt={m.title} />
