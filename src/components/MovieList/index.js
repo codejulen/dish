@@ -55,7 +55,7 @@ const MovieList = () => {
   return (
     <MovieWrapper>
       <Grid container spacing={3} alignItems="center">
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6}>
           <center>
             <h2>
               <span>Movies Seen</span>
@@ -63,7 +63,7 @@ const MovieList = () => {
             <h1>{movies.filter((m) => m.watched).length}</h1>
           </center>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6}>
           <center>
             <h2>
               <span>Movies Unseen</span>

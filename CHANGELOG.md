@@ -1,5 +1,11 @@
 # CHANGELOG.md
 
+# 1.1.1 (2020-09-07)
+
+Bugfixes:
+
+- Fixed an issue where seen/unseen counts were not adjusting width for mobile.
+
 # 1.1.0 (2020-09-06)
 
 Features:
