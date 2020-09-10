@@ -1,9 +1,14 @@
 import React from "react";
+import moment from "moment-timezone";
 import PropTypes from "prop-types";
 import { Grid, Paper, CardMedia, Typography } from "@material-ui/core";
 import { FocusedWrapper } from "./index.style";
 
 export const FocusedMovie = ({ poster, title, overview, contributor }) => {
+  var dateFormat = "MMMM Do YYYY, h:mm a";
+  var showtimeTime = moment.utc("2020-09-12 2:00:00");
+  var localDate = showtimeTime.local();
+  var duration = moment.duration(showtimeTime).subtract(moment());
   return (
     <FocusedWrapper>
       <Paper elevation={3}>
@@ -13,12 +18,16 @@ export const FocusedMovie = ({ poster, title, overview, contributor }) => {
         <Grid container spacing={1}>
           <Grid item xs={12} sm={3}>
             <CardMedia component="img" image={poster} />
-            {/* <img src={poster} alt="hello" /> */}
           </Grid>
           <Grid item xs={12} sm={9}>
             <p>
               <Typography gutterBottom variant="body" component="h1">
                 {title}
+              </Typography>
+              <Typography gutterBottom variant="body" component="h3">
+                Showtime: {localDate.format(dateFormat)} (that's in{" "}
+                {duration.humanize()}
+                !)
               </Typography>
               <Typography gutterBottom variant="body" component="h4">
                 Submitted By: {contributor}

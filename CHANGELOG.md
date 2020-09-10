@@ -1,5 +1,11 @@
 # CHANGELOG.md
 
+# 1.2.0 (2020-09-09)
+
+Features:
+
+- Added showtime for Fandango :) with timezone support! and a countdown timer!
+
 # 1.1.1 (2020-09-07)
 
 Bugfixes:

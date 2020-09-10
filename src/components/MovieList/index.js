@@ -58,7 +58,7 @@ const MovieList = () => {
         <Grid item xs={12} sm={6}>
           <center>
             <h2>
-              <span>Movies Seen</span>
+              <span>Seen</span>
             </h2>
             <h1>{movies.filter((m) => m.watched).length}</h1>
           </center>
@@ -66,7 +66,7 @@ const MovieList = () => {
         <Grid item xs={12} sm={6}>
           <center>
             <h2>
-              <span>Movies Unseen</span>
+              <span>Unseen</span>
             </h2>
             <h1>{movies.filter((m) => !m.watched).length}</h1>
           </center>
